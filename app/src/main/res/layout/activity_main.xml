@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtGasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="29dp"
+        android:text="GASOLINA"
+        android:textColor="#F7FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextGasolina"
+        app:layout_constraintStart_toStartOf="@+id/editTextGasolina"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Digite o preço da Gasolina:"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#FCFFFC"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGasolina" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="8dp"
+        android:text="ALCOOL"
+        android:textColor="#FCFCFC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAlcool"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGasolina" />
+
+    <EditText
+        android:id="@+id/editTextAlcool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Digite o preço do Alcool"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#EEEEEE"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="381dp"
+        android:onClick="calcular"
+        android:text="CALCULAR"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAlcool" />
+
+</LinearLayout>
