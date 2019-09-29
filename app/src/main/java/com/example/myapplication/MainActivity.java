@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public void calcular(View view){
         Double v_alcool = Double.parseDouble(this.alcool.getText().toString());
         Double v_gasolina = Double.parseDouble(this.gasosa.getText().toString());
-        String resultado = (v_alcool/v_gasolina) < 0.7 ? "Alcool":"Gasolina";
+        String resultado = (v_alcool/v_gasolina) >= 0.7 ? "Gasolina":"Alcool";
 
             //Cria o gerador do AlertDialog
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -36,36 +36,20 @@ public class MainActivity extends AppCompatActivity {
             //define um botão como positivo
             builder.setPositiveButton("Abastecer", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface arg0, int arg1) {
-                    Toast.makeText(MainActivity.this, "positivo=" + arg1, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Obrigado!" , Toast.LENGTH_SHORT).show();
                 }
             });
             //define um botão como negativo.
             builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface arg0, int arg1) {
-                    Toast.makeText(MainActivity.this, "negativo=" + arg1, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Que pena!", Toast.LENGTH_SHORT).show();
                 }
             });
-        //Passando parametros para outra Activity
-        Intent it = new Intent(this,HomeActivity.class);
-        it.putExtra("alcool",v_alcool);
-        it.putExtra("gasolina",v_gasolina);
-        startActivity(it);
-
         //cria o AlertDialog
             alerta = builder.create();
             //Exibe
             alerta.show();
     }
 
-    public void vaiParaHome(View view){
 
-        Double v_alcool = Double.parseDouble(this.alcool.getText().toString());
-        Double v_gasolina = Double.parseDouble(this.gasosa.getText().toString());
-        //Passando parametros para outra Activity
-
-        Intent it = new Intent(this,HomeActivity.class);
-        it.putExtra("alcool",v_alcool);
-        it.putExtra("gasolina",v_gasolina);
-        startActivity(it);
-    }
 }

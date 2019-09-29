@@ -17,24 +17,35 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Calcula qual ta mais barato alcool ou gasolina" />
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:text="Calcula qual ta mais barato alcool ou gasolina"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnCalculoGasosa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="vaiParaHome"
             android:text="Calcula Gasolina X Alcool" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Calcula IMC" />
+            android:layout_marginBottom="5dp"
+            android:text="Calcula IMC"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="vaiParaIMC"
             android:text="Calculo IMC" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

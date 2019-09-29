@@ -28,13 +28,13 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.myapplication.MenuActivity" />
-21-->C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:12:9-59
-21-->C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:12:19-47
-22        <activity android:name="com.example.myapplication.HomeActivity" />
+21        <activity android:name="com.example.myapplication.CalculoImcActivity" />
+21-->C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:12:9-65
+21-->C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:12:19-53
+22        <activity android:name="com.example.myapplication.MainActivity" />
 22-->C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:13:9-50
 22-->C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:13:19-47
-23        <activity android:name="com.example.myapplication.MainActivity" >
+23        <activity android:name="com.example.myapplication.HomeActivity" >
 23-->C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:14:9-20:20
 23-->C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:14:19-47
 24            <intent-filter>

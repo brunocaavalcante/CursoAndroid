@@ -628,6 +628,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable alcoolgasolina
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable notification_action_background
@@ -678,8 +679,9 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnCalcularImcId
+id btnCalculoGasosa
 id btn_calcular
-id button2
 id button3
 id buttonPanel
 id center
@@ -701,7 +703,10 @@ id dimensions
 id direct
 id disableHome
 id editTextAlcool
+id editTextAltura
 id editTextGasolina
+id editTextIdade
+id editTextPeso
 id edit_query
 id end
 id expand_activities_button
@@ -719,6 +724,8 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageResultado
+id imageView
 id info
 id invisible
 id italic
@@ -784,6 +791,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id textView2
 id textView3
 id textView4
@@ -794,6 +802,7 @@ id title_template
 id top
 id topPanel
 id txtGasolina
+id txtResultado
 id uniform
 id up
 id useLogo
@@ -833,9 +842,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_calculo_imc
 layout activity_home
 layout activity_main
-layout activity_menu
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

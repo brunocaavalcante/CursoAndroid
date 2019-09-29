@@ -19,9 +19,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.myapplication.MenuActivity" />
-        <activity android:name="com.example.myapplication.HomeActivity" />
-        <activity android:name="com.example.myapplication.MainActivity" >
+        <activity android:name="com.example.myapplication.CalculoImcActivity" />
+        <activity android:name="com.example.myapplication.MainActivity" />
+        <activity android:name="com.example.myapplication.HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

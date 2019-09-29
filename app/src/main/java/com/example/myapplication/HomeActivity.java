@@ -19,13 +19,13 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Intent it = getIntent();
+       /** Intent it = getIntent();
         alcool = it.getExtras().getDouble("alcool");
         gasolina = it.getExtras().getDouble("gasolina");
-        this.exibirResultado();
+        this.exibirResultado();**/
     }
 
-    public void exibirResultado(){
+   /** public void exibirResultado(){
         String message = (alcool/gasolina) < 0.7 ? "Alcool" : "Gasolina";
         //Cria o gerador do AlertDialog
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -43,6 +43,16 @@ public class HomeActivity extends AppCompatActivity {
         alerta = builder.create();
         //Exibe
         alerta.show();
-    }
+    }**/
+
+   public void vaiParaHome(View view) {
+       Intent it = new Intent(this, MainActivity.class);
+       startActivity(it);
+   }
+
+   public void vaiParaIMC(View view){
+       Intent it = new Intent(this,CalculoImcActivity.class);
+       startActivity(it);
+   }
 
 }

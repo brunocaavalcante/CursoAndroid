@@ -70,15 +70,15 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\us
 		ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.example.myapplication.MenuActivity
-ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:12:9-59
+activity#com.example.myapplication.CalculoImcActivity
+ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:12:9-65
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:12:19-47
-activity#com.example.myapplication.HomeActivity
+		ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:12:19-53
+activity#com.example.myapplication.MainActivity
 ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:13:9-50
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:13:19-47
-activity#com.example.myapplication.MainActivity
+activity#com.example.myapplication.HomeActivity
 ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:14:19-47
