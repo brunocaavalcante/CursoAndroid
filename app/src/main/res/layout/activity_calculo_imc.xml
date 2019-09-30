@@ -66,6 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:onClick="CalcularIMC"
             android:text="Calcular IMC" />
 
         <TextView
@@ -81,8 +82,7 @@
         <ImageView
             android:id="@+id/imageResultado"
             android:layout_width="match_parent"
-            android:layout_height="68dp"
-            app:srcCompat="@android:color/holo_blue_bright" />
+            android:layout_height="255dp" />
 
     </LinearLayout>
 

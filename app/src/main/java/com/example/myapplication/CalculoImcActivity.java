@@ -15,7 +15,7 @@ public class CalculoImcActivity extends AppCompatActivity {
     private EditText txtAltura;
     private EditText txtPeso;
     private Button btnCalcularIMC;
-    private TextView lblResultado;
+    private TextView txtResultado;
     private ImageView imgResultado;
 
     @Override
@@ -26,8 +26,9 @@ public class CalculoImcActivity extends AppCompatActivity {
         txtIdade = findViewById(R.id.editTextIdade);
         txtAltura = findViewById(R.id.editTextAltura);
         txtPeso = findViewById(R.id.editTextPeso);
-        //lblResultado = findViewById(R.id.textResultadoId);
+        txtResultado = findViewById(R.id.txtResultado);
         btnCalcularIMC = findViewById(R.id.btnCalcularImcId);
+        imgResultado = findViewById(R.id.imageResultado);
 
     }
 
@@ -41,35 +42,19 @@ public class CalculoImcActivity extends AppCompatActivity {
         altura = Double.parseDouble(txtAltura.getText().toString());
         resultado =  peso/(altura * altura);
 
-       /* if (sexo == 0) {
-            if (resultado < 18.5) {
 
-                this.imgResultado.setImageResource(R.drawable.magra);
+            if (resultado < 18.5) {
+                this.txtResultado.setText("Magro");
+                this.imgResultado.setImageResource(R.drawable.magro);
             } else if (resultado >= 18.5 && resultado < 24.9) {
                 this.txtResultado.setText("Normal");
-                this.imgResultado.setImageResource(R.drawable.normal);
+                this.imgResultado.setImageResource(R.drawable.fitness);
             } else if (resultado <= 24.9 && resultado < 29.9) {
                 this.txtResultado.setText("Gordão hein");
-                this.imgResultado.setImageResource(R.drawable.feno);
+                this.imgResultado.setImageResource(R.drawable.gordo);
             } else {
                 this.txtResultado.setText("Lascou");
-                this.imgResultado.setImageResource(R.drawable.perdigao);
+                this.imgResultado.setImageResource(R.drawable.gordo);
             }
-        }else{
-            if (resultado < 18.5) {
-                this.txtResultado.setText("Maagro");
-                this.imgResultado.setImageResource(R.drawable.magra);
-            } else if (resultado >= 18.5 && resultado < 24.9) {
-                this.txtResultado.setText("Normal");
-                this.imgResultado.setImageResource(R.drawable.normal);
-            } else if (resultado <= 24.9 && resultado < 29.9) {
-                this.txtResultado.setText("Gordão hein");
-                this.imgResultado.setImageResource(R.drawable.feno);
-            } else {
-                this.txtResultado.setText("Lascou");
-                this.imgResultado.setImageResource(R.drawable.perdigao);
-            }
-        }*/
-
-    }
+        }
 }

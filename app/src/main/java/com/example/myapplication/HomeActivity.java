@@ -55,4 +55,9 @@ public class HomeActivity extends AppCompatActivity {
        startActivity(it);
    }
 
+    public void vaiParaEmpresa(View view){
+        Intent it = new Intent(this,EmpresaActivity.class);
+        startActivity(it);
+    }
+
 }
